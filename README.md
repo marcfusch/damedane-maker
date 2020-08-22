@@ -1,11 +1,11 @@
 # DameDaNe Standalone Maker
 
-This repository not only contains the source code for the paper First Order Motion Model for Image Animation by Aliaksandr Siarohin but also some data models and videos as well as a convinient script aimed at making DameDaNe deepfakes memes quick and easy.
+This repository not only contains the source code for the First Order Motion Model by https://github.com/AliaksandrSiarohin/ but also some required data models and videos as well as a convinient script aimed at making DameDaNe deepfakes memes quick and easy.
 
 ## Before continuing
 
 Note that the original motion model program uses CUDA acceleration on NVIDIA gpus only. You will be required to install the latest nvidia drivers with CUDA support.
-If you do have an NVIDIA gpus, you can continue by cloning the repo:
+If you do have an NVIDIA gpus however, you can continue by cloning the repo:
 ```
 git clone https://github.com/marcfusch/damedane-standalone-maker/
 cd damedane-standalone-maker/
