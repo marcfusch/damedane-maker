@@ -5,11 +5,11 @@ input=$1
 install(){
 	echo "Checking install..."
 	echo "You need to have the latest nvidia drivers that supports CUDA accleration"
-	echo "Checking required libraires..."
+	echo -e "Checking required libraires...\n"
 	pip install -U -r requirements.txt
-	echo "Checking ffmpeg..."
+	echo -e "\nChecking ffmpeg...\n"
 	sudo apt install ffmpeg
-	echo -e "Remember you still have to download this file: https://drive.google.com/uc?export=download&id=1L8P-hpBhZi8Q_1vP2KlQ4N6dvlzpYBvZ\nAfter that, put it in the damedane-data/ directory."
+	echo -e "\nRemember you still have to download this file: https://drive.google.com/uc?export=download&id=1L8P-hpBhZi8Q_1vP2KlQ4N6dvlzpYBvZ\nAfter that, put it in the damedane-data/ directory."
 	echo "Install done !"
 }
 
