@@ -22,7 +22,7 @@ You can still do the installation process manually by running:
 pip install -U -r requirements.txt
 apt get install ffmpeg
 ```
-Packet installation have also been tested with ```--use-feature=2020-resolver``` feature.
+Packet installation have also been tested with the ```--use-feature=2020-resolver``` feature.
 
 ## Making the meme
 
