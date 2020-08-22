@@ -9,6 +9,7 @@ install(){
 	pip install -U -r requirements.txt
 	echo "Checking ffmpeg..."
 	sudo apt install ffmpeg
+	echo -e "Remember you still have to download this file: https://drive.google.com/uc?export=download&id=1L8P-hpBhZi8Q_1vP2KlQ4N6dvlzpYBvZ\nAfter that, put it in the damedane-data/ directory."
 	echo "Install done !"
 }
 
@@ -30,6 +31,10 @@ elif [[ $input == '' ]]; then
 else
 	if [[ ! -f "$input" ]]; then
 		echo "${input} does not exists!"
+		exit
+	fi
+	if [[ ! -f damedane-data/vox-adv-cpk.pth.tar ]]; then
+		echo -e "Checkpoint data file not found.\nPlease ensure the file located here: damedane-data/vox-adv-cpk.pth.tar"
 		exit
 	fi
 	process
