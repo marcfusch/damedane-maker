@@ -71,7 +71,6 @@ def compute_bbox(start, end, fps, tube_bbox, frame_shape, inp, image_shape, incr
 
     return f'ffmpeg -i {inp} -ss {start} -t {time} -filter:v "crop={w}:{h}:{left}:{top}, scale={scale}" crop.mp4'
 
-
 def compute_bbox_trajectories(trajectories, fps, frame_shape, args):
     commands = []
     for i, (bbox, tube_bbox, start, end) in enumerate(trajectories):
