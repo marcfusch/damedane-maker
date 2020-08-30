@@ -1,7 +1,7 @@
 #!/bin/bash
 
 input=$1
-memelocation='tk78.mp4'
+memelocation='/damedane-data/bakamitai_template.mp4'
 install(){
 	echo "Checking install..."
 	echo "You need to have the latest nvidia drivers that supports CUDA accleration"
@@ -39,7 +39,7 @@ else
 	fi
 	process
 	echo "Adding audio"
-	ffmpeg -i result.mp4 -i "$memelocation" -c copy -map 0:v:0 -map 1:a:1 -shortest "$input.mp4"
+	ffmpeg -i result.mp4 -i $memelocation -c copy -map 0:0 -map 1:1 -shortest "$input.mp4"
 	echo "Audio added!"
 	rm result.mp4
 	echo "Cleaning temp files..."
