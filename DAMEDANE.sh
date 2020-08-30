@@ -1,7 +1,7 @@
 #!/bin/bash
 
 input=$1
-memelocation='/damedane-data/bakamitai_template.mp4'
+memelocation='damedane-data/bakamitai_template.mp4'
 install(){
 	echo "Checking install..."
 	echo "You need to have the latest nvidia drivers that supports CUDA accleration"
