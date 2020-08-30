@@ -3,14 +3,14 @@
 input=$1
 memelocation='damedane-data/bakamitai_template.mp4'
 install(){
-	echo "Checking install..."
-	echo "You need to have the latest nvidia drivers that supports CUDA accleration"
+	echo -e "Checking install..."
+	echo -e "You NEED to have the latest nvidia drivers that supports CUDA accleration"
 	echo -e "Checking required libraires...\n"
 	pip install -U -r requirements.txt
 	echo -e "\nChecking ffmpeg...\n"
 	sudo apt install ffmpeg
-	echo -e "\nRemember you still have to download this file: https://drive.google.com/uc?export=download&id=1L8P-hpBhZi8Q_1vP2KlQ4N6dvlzpYBvZ\nAfter that, put it in the damedane-data/ directory."
-	echo "Install done !"
+	echo -e "\nRemember you still have to download this file: \e[31;4mhttps://drive.google.com/uc?export=download&id=1L8P-hpBhZi8Q_1vP2KlQ4N6dvlzpYBvZ\n\e[39;24mAfter that, put it in the damedane-data/ directory."
+	echo -e "\e[1mInstall done !"
 }
 
 process(){
@@ -40,7 +40,7 @@ else
 	process
 	echo "Adding audio"
 	ffmpeg -i result.mp4 -i $memelocation -c copy -map 0:0 -map 1:1 -shortest "$input.mp4"
-	echo "Audio added!"
+	echo -e "Audio added!\nCleaning up temp files..."
 	rm result.mp4
-	echo "Cleaning temp files..."
+	echo -e "\e[1mDone !"
 fi
