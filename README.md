@@ -5,7 +5,7 @@ This repository not only contains the source code for the First Order Motion Mod
 ## Before continuing
 
 Note that the original motion model program uses CUDA acceleration on NVIDIA gpus only. You will be required to install the latest nvidia drivers with CUDA support.
-If you do have an NVIDIA gpus however, you can continue by cloning the repo:
+If you do have a compatible gpu, you can continue by cloning the repo:
 ```
 git clone https://github.com/marcfusch/damedane-standalone-maker/
 cd damedane-standalone-maker/
