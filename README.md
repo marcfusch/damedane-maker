@@ -24,6 +24,8 @@ apt get install ffmpeg
 ```
 Packet installation have also been tested with the ```--use-feature=2020-resolver``` feature.
 
+Don't forget to download the dataset file from https://drive.google.com/uc?export=download&id=1L8P-hpBhZi8Q_1vP2KlQ4N6dvlzpYBvZ and put it into the damedane-data/ folder.
+
 ## Making the meme
 
 In order to make the meme, simply type:
